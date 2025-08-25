@@ -1,0 +1,27 @@
+{
+  "name": "document-extractor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "postinstall": "node -e \"try{require('fs').mkdirSync('uploads',{recursive:true})}catch(e){}\""
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.16.1",
+    "autoprefixer": "^10.4.17",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "form-data": "^4.0.0",
+    "multer": "^2.0.2",
+    "next": "14.2.5",
+    "pdf-parse": "^1.1.1",
+    "postcss": "^8.4.35",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.4.4",
+    "tesseract.js": "^5.1.0"
+  }
+}
